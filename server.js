@@ -8,7 +8,7 @@ const filePath = path.join(__dirname, 'public', file)
 const extname = path.extname(filePath)
 
 const allowedFileType = ['.html', '.css', '.js']
-const allowed = allowedFileType.find((item) => item == extname)
+const allowed = allowedFileType.find(item => item == extname)
 
 if(!allowed) return
 
